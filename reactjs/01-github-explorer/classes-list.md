@@ -36,4 +36,8 @@
 - Ambiente dev e produção
 
   - yarn add cross-env -D <i>`esse comando serve pra criar variáveis de ambiente, independente do OS`</i>
+
+- Importando arquivos CSS
+
+  - yarn add style-loader css-loader -D
   
