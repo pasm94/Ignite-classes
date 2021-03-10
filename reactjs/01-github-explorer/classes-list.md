@@ -45,4 +45,8 @@
 
   - yarn add sass-loader -D
   - yarn add node-sass -D
+
+- Fast Refresh no Webpack
+
+  - yarn add @pmmmwh/react-refresh-webpack-plugin react-refresh -D
   
