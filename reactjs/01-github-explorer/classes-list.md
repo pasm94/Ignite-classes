@@ -26,3 +26,7 @@
 
 - Servindo HTML estático
   - yarn add html-webpack-plugin -D
+
+- Webpack Dev Server
+  - yarn add webpack-dev-server -D
+  - yarn webpack serve
