@@ -40,4 +40,9 @@
 - Importando arquivos CSS
 
   - yarn add style-loader css-loader -D
+
+- Utilizando SASS
+
+  - yarn add sass-loader -D
+  - yarn add node-sass -D
   
