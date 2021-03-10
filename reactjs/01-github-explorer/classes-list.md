@@ -25,8 +25,15 @@
   Faz o mesmo que o Babel, porém para outros tipos de arquivos (.png, .jpg) dentro do código js
 
 - Servindo HTML estático
+
   - yarn add html-webpack-plugin -D
 
 - Webpack Dev Server
+
   - yarn add webpack-dev-server -D
   - yarn webpack serve
+
+- Ambiente dev e produção
+
+  - yarn add cross-env -D <i>`esse comando serve pra criar variáveis de ambiente, independente do OS`</i>
+  
