@@ -10,4 +10,11 @@
   * yarn babel src/index.jsx --out-file dist/bundle.js
   * yarn add @babel/preset-react -D
 
-  
+  O Babel converte o código js moderno em código js que os navegadores entendem
+
+* Configurando Webpack
+  * yarn add webpack webpack-cli -D
+  * yarn add babel-loader -D
+  * yarn webpack
+
+  Faz o mesmo que o Babel, porém para outros tipos de arquivos (.png, .jpg) dentro do código js
