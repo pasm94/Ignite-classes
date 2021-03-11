@@ -49,4 +49,11 @@
 - Fast Refresh no Webpack
 
   - yarn add @pmmmwh/react-refresh-webpack-plugin react-refresh -D
+
+- TypeScript no ReactJS
+
+  - yarn add typescript -D
+  - yarn tsc --init
+  - yarn add @babel/preset-typescript -D
+  - yarn add @types/react-dom -D
   
