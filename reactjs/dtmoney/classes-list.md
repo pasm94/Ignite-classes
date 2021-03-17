@@ -5,3 +5,7 @@
 - Estrutura com create-react-app
 
   - yarn create react-app dtmoney --template typescript
+
+- Exportando assets do Figma
+
+  - assets exportados de https://www.figma.com/file/0xmu9mj2TJYoIOubBFWsk5/dtmoney-Ignite-(Copy)?node-id=1%3A863
