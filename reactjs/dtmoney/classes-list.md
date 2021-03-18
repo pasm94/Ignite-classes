@@ -14,3 +14,7 @@
 
   - yarn add styled-components
   - yarn add @types/styled-components -D
+  
+- Configurando MirageJS
+
+  - yarn add miragejs
