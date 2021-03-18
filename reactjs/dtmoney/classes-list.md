@@ -22,4 +22,9 @@
 - Configurando cliente do Axios
 
   - yarn add axios
+
+- Configurando modal de criação
+
+  - yarn add react-modal
+  - yarn add @types/react-modal -D
   
