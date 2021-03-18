@@ -18,3 +18,8 @@
 - Configurando MirageJS
 
   - yarn add miragejs
+  
+- Configurando cliente do Axios
+
+  - yarn add axios
+  
