@@ -6,15 +6,27 @@ interface Transaction {
   title: string;
   amount: number;
   category: string;
-  type: 'deposit' | 'withdraw';
+  type: string;
   createdAt: string;
 }
+
+type TransactionInput = Omit<
+  Transaction,
+  'id' | 'createdAt'
+>; /* Pick faz o contrario de Omit */
 
 interface TransactionsProviderProps {
   children: ReactNode /* ReactNode significa que aceita qlqr content valido pra react */;
 }
 
-export const TransactionsContext = createContext<Transaction[]>([]);
+interface TransactionsContextData {
+  transactions: Transaction[];
+  createTransaction: (transaction: TransactionInput) => void;
+}
+
+export const TransactionsContext = createContext<TransactionsContextData>(
+  {} as TransactionsContextData
+);
 
 export function TransactionsProvider({ children }: TransactionsProviderProps) {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
@@ -25,8 +37,12 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
       .then(response => setTransactions(response.data.transactions));
   }, []);
 
+  function createTransaction(transaction: TransactionInput) {
+    api.post('/transactions', transaction);
+  }
+
   return (
-    <TransactionsContext.Provider value={transactions}>
+    <TransactionsContext.Provider value={{ transactions, createTransaction }}>
       {children}
     </TransactionsContext.Provider>
   );
