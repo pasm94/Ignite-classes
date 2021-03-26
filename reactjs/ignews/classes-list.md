@@ -9,3 +9,7 @@
 - Adicionando TypeScript
 
   - yarn add typescript @types/react @types/node -D
+  
+- Estilização com SASS
+
+  - yarn add sass
