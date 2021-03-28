@@ -10,7 +10,6 @@ export default class MyDocument extends Document {
             rel='stylesheet'
           />
 
-          <title>ig.news</title>
           <meta name='google' content='notranslate'></meta>
         </Head>
         <body>
