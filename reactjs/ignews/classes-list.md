@@ -13,3 +13,7 @@
 - Estilização com SASS
 
   - yarn add sass
+
+- Componente: SignInButton
+
+  - yarn add react-icons
