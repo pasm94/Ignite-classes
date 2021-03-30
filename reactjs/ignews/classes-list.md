@@ -21,3 +21,8 @@
 - Consumindo API do Stripe (SSR)
 
   - yarn add stripe
+
+- Autenticação com Next Auth
+
+  - yarn add next-auth
+  - yarn add @types/next-auth -D
