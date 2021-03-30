@@ -17,3 +17,7 @@
 - Componente: SignInButton
 
   - yarn add react-icons
+
+- Consumindo API do Stripe (SSR)
+
+  - yarn add stripe
