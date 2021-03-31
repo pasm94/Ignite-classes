@@ -22,7 +22,13 @@
 
   - yarn add stripe
 
+#### Back-end no front-end
+
 - Autenticação com Next Auth
 
   - yarn add next-auth
   - yarn add @types/next-auth -D
+
+- Configurando FaunaDb
+
+  - yarn add faunadb
