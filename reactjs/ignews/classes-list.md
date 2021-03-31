@@ -32,3 +32,8 @@
 - Configurando FaunaDb
 
   - yarn add faunadb
+
+- Redirecionando para o Stripe
+
+  - yarn add axios
+  - yarn add @stripe/stripe-js
