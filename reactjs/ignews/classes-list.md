@@ -37,3 +37,8 @@
 
   - yarn add axios
   - yarn add @stripe/stripe-js
+
+- Ouvindo webhooks
+
+  - .\stripe login
+  - .\stripe listen --forward-to localhost:3000/api/webhooks
