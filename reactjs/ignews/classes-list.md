@@ -9,7 +9,7 @@
 - Adicionando TypeScript
 
   - yarn add typescript @types/react @types/node -D
-  
+
 - Estilização com SASS
 
   - yarn add sass
@@ -48,3 +48,8 @@
 - Consumindo API do Prismic
 
   - yarn add @prismicio/client
+
+- Listando posts em tela
+
+  - yarn add prismic-dom
+  - yarn add @types/prismic-dom
