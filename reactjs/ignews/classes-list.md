@@ -42,3 +42,9 @@
 
   - .\stripe login
   - .\stripe listen --forward-to localhost:3000/api/webhooks
+
+  #### Front-end JAMStack
+
+- Consumindo API do Prismic
+
+  - yarn add @prismicio/client
