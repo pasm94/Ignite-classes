@@ -1,4 +1,4 @@
-import { GetStaticProps } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import { getSession, useSession } from 'next-auth/client';
 import { useRouter } from 'next/dist/client/router';
 import Head from 'next/head';
@@ -55,10 +55,10 @@ export default function PostPreview({ post }: PostPreviewProps) {
   );
 }
 
-export const getStaticPaths = () => {
+export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: [],
-    fallback: 'blocking',
+    paths: [], // quais previews de post quero carregar antes de um user acessar a page
+    fallback: 'blocking', //
   };
 };
 
@@ -85,5 +85,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   return {
     props: { post },
+    revalidate: 60 * 30, // 30 minutes
   };
 };
