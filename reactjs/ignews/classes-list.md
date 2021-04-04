@@ -53,3 +53,7 @@
 
   - yarn add prismic-dom
   - yarn add @types/prismic-dom
+
+- Validando assinatura ativa
+
+  - yarn add @types/next-auth@3.7.1 -D
