@@ -15,4 +15,8 @@
 
   - yarn add react-icons
 
+- Página: Dashboard
+
+  - yarn add apexcharts react-apexcharts
+
   
