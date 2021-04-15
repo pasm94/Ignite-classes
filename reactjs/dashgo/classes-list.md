@@ -10,3 +10,9 @@
 - Configurando Cackra UI
 
   - yarn add @chakra-ui/react @chakra-ui/core @emotion/react @emotion/styled framer-motion
+
+- Criando Header
+
+  - yarn add react-icons
+
+  
