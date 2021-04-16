@@ -7,7 +7,7 @@
   - yarn create next-app dashgo
   - yarn add typescript @types/react @types/node -D
 
-- Configurando Cackra UI
+- Configurando Chakra UI
 
   - yarn add @chakra-ui/react @chakra-ui/core @emotion/react @emotion/styled framer-motion
 
