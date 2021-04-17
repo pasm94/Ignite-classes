@@ -19,4 +19,8 @@
 
   - yarn add apexcharts react-apexcharts
 
+- Form de autenticação
+
+  - yarn add react-hook-form
+
   
