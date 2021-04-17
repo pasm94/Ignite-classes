@@ -13,7 +13,8 @@ const SidebarDrawerContext = createContext({} as SidebarDrawerContextData);
 export function SidebarDrawerProvider({
   children,
 }: SidebarDrawerProviderProps) {
-  const disclosure = useDisclosure();
+  const disclosure = useDisclosure(); // hook do chakra que nos retorna algumas infos (ver abaixo)
+  // const { isOpen, onClose, onOpen, onToggle, ... } = useDisclosure();
 
   const router = useRouter();
 
