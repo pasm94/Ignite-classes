@@ -23,4 +23,8 @@
 
   - yarn add react-hook-form
 
+- Validação dos dados
+
+  - yarn add yup @hookform/resolvers
+
   
