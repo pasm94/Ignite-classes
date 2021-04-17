@@ -5,7 +5,7 @@ import {
   Text,
 } from '@chakra-ui/react';
 import { ElementType } from 'react';
-import Link from 'next/link';
+import { ActiveLink } from '../ActiveLink';
 
 interface NavLinkProps extends ChakraLinkProps {
   icon: ElementType;
@@ -17,7 +17,7 @@ interface NavLinkProps extends ChakraLinkProps {
 
 export function NavLink({ icon, children, href, ...rest }: NavLinkProps) {
   return (
-    <Link href={href} passHref>
+    <ActiveLink href={href} passHref>
       {/* passHref mostra o link no hover, eh como colocar um <a> em volta de tudo */}
       <ChakraLink display='flex' align='center' {...rest}>
         <Icon as={icon} fontSize='20' />
@@ -25,6 +25,6 @@ export function NavLink({ icon, children, href, ...rest }: NavLinkProps) {
           {children}
         </Text>
       </ChakraLink>
-    </Link>
+    </ActiveLink>
   );
 }
