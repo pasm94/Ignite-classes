@@ -27,4 +27,8 @@
 
   - yarn add yup @hookform/resolvers
 
-  
+#### Data fetching e cache local
+
+- Configurando MirageJS
+
+  - yarn add miragejs -D
