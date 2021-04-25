@@ -37,3 +37,7 @@
 
   - yarn add faker -D
   - yarn add @types/faker -D
+
+- Configurando React Query
+
+  - yarn add react-query
