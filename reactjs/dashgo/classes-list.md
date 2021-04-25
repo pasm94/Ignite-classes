@@ -32,3 +32,8 @@
 - Configurando MirageJS
 
   - yarn add miragejs -D
+
+- Factories e seeds
+
+  - yarn add faker -D
+  - yarn add @types/faker -D
