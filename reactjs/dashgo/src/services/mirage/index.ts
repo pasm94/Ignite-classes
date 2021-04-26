@@ -56,7 +56,9 @@ export function makeServer() {
         );
 
         return new Response(200, { 'x-total-count': String(total) }, { users });
-      }); // shorthands do miragejs ja automatizam a rota
+      });
+
+      this.get('/users/:id'); // shorthands do miragejs ja automatizam a rota
 
       this.post('/users');
 
