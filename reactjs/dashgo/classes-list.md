@@ -41,3 +41,7 @@
 - Configurando React Query
 
   - yarn add react-query
+
+- Configurando Axios
+
+  - yarn add axios
