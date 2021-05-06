@@ -1,5 +1,6 @@
 import { createContext, ReactNode, useState } from 'react';
 import Router from 'next/router';
+import { setCookie } from 'nookies';
 
 import { api } from '../services/api';
 
@@ -41,6 +42,19 @@ export function AuthProvider({ children }: AuthProviderProps) {
       // sessionStorage -> so dura durante a session
       // localStorage -> no next nao funciona pq localStorage soh existe no browser, e nao em ssr
       // cookies -> resolve
+
+      // setCookie -> primeiro paramentro eh o context, e quando e executado pelo browser
+      // ex: login no front. Esse parametro eh undefined
+      // segundo parametro eh o nome que daremos ao token, e o ultimo o token
+      setCookie(undefined, 'nextauth.token', token, {
+        maxAge: 60 * 60 * 24 * 30, // 30 days
+        path: '/', // quais caminhos do app terao acesso ao cookie. Com '/' todo app tera acesso
+      });
+
+      setCookie(undefined, 'nextauth.refreshToken', refreshToken, {
+        maxAge: 60 * 60 * 24 * 30,
+        path: '/',
+      });
 
       setUser({
         email,

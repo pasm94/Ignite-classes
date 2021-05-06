@@ -10,3 +10,7 @@
 - Configurando cliente do axios
 
   - yarn add axios
+
+- Salvando tokens nos cookies
+
+  - yarn add nookies
