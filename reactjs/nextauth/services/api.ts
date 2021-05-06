@@ -1,5 +1,7 @@
+import { rejects } from 'assert/strict';
 import axios, { AxiosError } from 'axios';
-import { parseCookies, setCookie } from 'nookies';
+import { destroyCookie, parseCookies, setCookie } from 'nookies';
+import { signOut } from '../contexts/AuthContext';
 
 let cookies = parseCookies();
 let isRefreshing = false;
@@ -80,7 +82,10 @@ api.interceptors.response.use(
         });
       } else {
         // deslogar user
+        signOut();
       }
     }
+
+    return Promise.reject(error);
   }
 );
