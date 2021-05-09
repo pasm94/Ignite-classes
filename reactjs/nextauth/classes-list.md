@@ -14,3 +14,7 @@
 - Salvando tokens nos cookies
 
   - yarn add nookies
+
+- Validando permissões
+
+  - yarn add jwt-decode
