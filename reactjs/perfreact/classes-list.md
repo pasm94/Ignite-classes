@@ -1,20 +1,9 @@
-## CHAPTER IV
+## CHAPTER V
 
-#### Autenticação e autorização
+#### Performando apps com ReactJS
 
-- Contexto de autenticação
+- Exemplo de aplicação
 
   - yarn create next-app nextauth
   - yarn add typescript @types/react @types/node -D
-
-- Configurando cliente do axios
-
-  - yarn add axios
-
-- Salvando tokens nos cookies
-
-  - yarn add nookies
-
-- Validando permissões
-
-  - yarn add jwt-decode
+  - yarn add json-server -D
