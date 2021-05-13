@@ -13,10 +13,8 @@ export default function Home() {
     data: [],
   });
 
-  const addToWishList = useCallback(() => {
-    async (id: number) => {
-      console.log(id);
-    };
+  const addToWishList = useCallback(async (id: number) => {
+    console.log(id);
   }, []);
 
   async function handleSearch(event: FormEvent) {
