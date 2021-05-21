@@ -57,3 +57,11 @@
 - Validando assinatura ativa
 
   - yarn add @types/next-auth@3.7.1 -D
+
+## CHAPTER V
+
+#### Testes unitários no React
+
+- Configurando Testing Library
+
+  - yarn add jest jest-dom @testing-library/jest-dom @testing-library/dom @testing-library/react babel-jest -D
