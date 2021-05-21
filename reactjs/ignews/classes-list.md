@@ -65,3 +65,7 @@
 - Configurando Testing Library
 
   - yarn add jest jest-dom @testing-library/jest-dom @testing-library/dom @testing-library/react babel-jest -D
+
+- Testando primeiro componente
+
+  - yarn test (pra mim funcionou yarn jest na verdade...)
