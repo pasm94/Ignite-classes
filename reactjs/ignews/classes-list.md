@@ -68,4 +68,8 @@
 
 - Testando primeiro componente
 
-  - yarn test (pra mim funcionou yarn jest na verdade...)
+  - yarn test (pra mim funcionou yarn jest na verdade, mas criei o script test)
+
+- Testando Header
+
+  - yarn add identity-obj-proxy -D
