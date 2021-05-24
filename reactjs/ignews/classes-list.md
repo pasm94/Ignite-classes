@@ -73,3 +73,7 @@
 - Testando Header
 
   - yarn add identity-obj-proxy -D
+
+- Testando SignInButton
+
+  - yarn add ts-jest -D
