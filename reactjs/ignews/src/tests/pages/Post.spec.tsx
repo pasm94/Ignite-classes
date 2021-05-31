@@ -80,22 +80,3 @@ describe('Post page', () => {
     );
   });
 });
-
-/* 
-const getPrismicClientMocked = mocked(getPrismicClient);
-
-    getPrismicClientMocked.mockReturnValueOnce({
-      query: jest.fn().mockResolvedValueOnce({
-        results: [
-          {
-            uid: 'my-new-post',
-            data: {
-              title: [{ type: 'heading', text: 'My new post' }],
-              content: [{ type: 'paragraph', text: 'Post excerpt' }],
-            },
-            last_publication_date: '04-01-2021',
-          },
-        ],
-      }),
-    } as any);
-*/
