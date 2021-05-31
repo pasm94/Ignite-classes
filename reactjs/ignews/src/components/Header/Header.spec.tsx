@@ -25,6 +25,11 @@ describe('Header component', () => {
 
     // debug();
 
+    /* 
+    screen.logTestingPlaygroundURL();
+    mostra um link na linha de comando onde sugere o que usar como teste
+    */
+
     expect(screen.getByText('Home')).toBeInTheDocument();
     expect(screen.getByText('Posts')).toBeInTheDocument();
   });
