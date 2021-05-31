@@ -77,3 +77,7 @@
 - Testando SignInButton
 
   - yarn add ts-jest -D
+
+- Coverage report
+
+  - yarn test --coverage
