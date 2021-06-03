@@ -8,3 +8,7 @@
   - yarn init -y
   - yarn add express
   - node src/index.js (rodar o node)
+
+- Adicionando o Nodemon na aplicação
+
+  - yarn add nodemon -D
