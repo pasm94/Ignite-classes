@@ -10,3 +10,4 @@
   - yarn add typescript -D
   - yarn tsc --init
   - yarn tsc
+  - node dist/server.js
