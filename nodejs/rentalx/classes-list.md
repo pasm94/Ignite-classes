@@ -18,3 +18,7 @@
   - yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 
   - yarn add ts-node-dev -D
+
+- Inserindo ID com uuid
+  - yarn add uuid
+  - yarn add @types/uuid -D
