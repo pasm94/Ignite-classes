@@ -22,3 +22,7 @@
 - Inserindo ID com uuid
   - yarn add uuid
   - yarn add @types/uuid -D
+
+- Criando upload de arquivos
+  - yarn add multer
+  - yarn add @types/multer -D
