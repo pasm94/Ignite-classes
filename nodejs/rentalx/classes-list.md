@@ -29,3 +29,7 @@
 
 - Conhecendo o conceito de stream
   - yarn add csv-parse
+
+- Configurando o swagger
+  - yarn add swagger-ui-express
+  - yarn add @types/swagger-ui-express -D
