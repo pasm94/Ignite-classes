@@ -26,3 +26,6 @@
 - Criando upload de arquivos
   - yarn add multer
   - yarn add @types/multer -D
+
+- Conhecendo o conceito de stream
+  - yarn add csv-parse
