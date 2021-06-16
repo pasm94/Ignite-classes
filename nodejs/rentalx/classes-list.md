@@ -38,3 +38,10 @@
   - docker build -t rentx . (rentx é o nome da imagem que queremos criar, e o ponto é onde está o Dockerfile)
   - docker ps (ver container que estão rodando)
   - docker run -p 3333:3333 rentx (-p pra mapear que quando eu chamar a porta 3333 no localhost, eu quero que dentro do docker ele procure pela porta 3333, que é a porta do container desse projeto)
+
+- Usando docker-compose
+  - docker stop 442d442d5d7a90f8 (para parar a imagem que está rodando)
+  - docker rm 442d442d5d7a90f8 (para remover a imagem)
+  - docker-compose up (rodar o docker compose)
+  - docker-compose up -d (rodar o docker compose em background)
+  - docker logs rentx -f (ver logs de execução)
