@@ -33,3 +33,8 @@
 - Configurando o swagger
   - yarn add swagger-ui-express
   - yarn add @types/swagger-ui-express -D
+
+- Criando nosso primeiro container e Dockerfile
+  - docker build -t rentx . (rentx é o nome da imagem que queremos criar, e o ponto é onde está o Dockerfile)
+  - docker ps (ver container que estão rodando)
+  - docker run -p 3333:3333 rentx (-p pra mapear que quando eu chamar a porta 3333 no localhost, eu quero que dentro do docker ele procure pela porta 3333, que é a porta do container desse projeto)
