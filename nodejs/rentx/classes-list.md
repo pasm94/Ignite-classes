@@ -49,3 +49,12 @@
 - Instalando o TypeORM
   - yarn add typeorm reflect-metadata
   - yarn add pg
+
+- Criando container do postgres
+  - docker-compose up --force-recreate (recriar)
+  - docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' rentx
+  - docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' database_ignite
+  (esses dois comandos vão mostrar as portas ocupadas por cada um, para ver que em localhost elas não conseguem se comunicar, gerando erro de conexão entre ambas)
+  - docker exec rentx cat /etc/hosts
+  - docker exec database_ignite cat /etc/hosts
+  (os comandos acima fazer algo parecido com os anteriores)
