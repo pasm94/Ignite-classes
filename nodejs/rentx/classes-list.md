@@ -45,3 +45,7 @@
   - docker-compose up (rodar o docker compose)
   - docker-compose up -d (rodar o docker compose em background)
   - docker logs rentx -f (ver logs de execução)
+
+- Instalando o TypeORM
+  - yarn add typeorm reflect-metadata
+  - yarn add pg
