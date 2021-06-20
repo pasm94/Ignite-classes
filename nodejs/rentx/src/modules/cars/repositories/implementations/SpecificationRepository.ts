@@ -1,15 +1,15 @@
 import { Specification } from "../../entities/Specification";
 import {
   ICreateSpecificationDTO,
-  ISpecificationRepository,
-} from "../ISpecificationRepository";
+  ISpecificationsRepository,
+} from "../ISpecificationsRepository";
 
-class SpecificationsRepository implements ISpecificationRepository {
+class SpecificationsRepository implements ISpecificationsRepository {
   private specifications: Specification[];
 
   private static INSTANCE: SpecificationsRepository;
 
-  private constructor() {
+  constructor() {
     this.specifications = [];
   }
 
