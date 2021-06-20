@@ -58,3 +58,6 @@
   - docker exec rentx cat /etc/hosts
   - docker exec database_ignite cat /etc/hosts
   (os comandos acima fazer algo parecido com os anteriores)
+
+- Conhecendo TSyringe
+  - yarn add tsyringe
