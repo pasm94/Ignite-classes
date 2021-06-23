@@ -61,3 +61,7 @@
 
 - Conhecendo TSyringe
   - yarn add tsyringe
+
+- Criptografrar senha
+  - yarn add bcrypt
+  - yarn add @types/bcrypt -D
