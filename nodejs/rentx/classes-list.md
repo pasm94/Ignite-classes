@@ -69,3 +69,6 @@
 - Criando token do usuário
   - yarn add jsonwebtoken
   - yarn add @types/jsonwebtoken -D
+
+- Tratamento de exceções
+  - yarn add express-async-errors
