@@ -65,3 +65,7 @@
 - Criptografrar senha
   - yarn add bcrypt
   - yarn add @types/bcrypt -D
+
+- Criando token do usuário
+  - yarn add jsonwebtoken
+  - yarn add @types/jsonwebtoken -D
