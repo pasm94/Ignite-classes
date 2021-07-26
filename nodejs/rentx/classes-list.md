@@ -72,3 +72,8 @@
 
 - Tratamento de exceções
   - yarn add express-async-errors
+
+- Criando o primeiro teste
+  - yarn add jest @types/jest -D
+  - yarn jest --init
+  - yarn add ts-jest -D
