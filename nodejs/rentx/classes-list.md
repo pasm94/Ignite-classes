@@ -77,3 +77,6 @@
   - yarn add jest @types/jest -D
   - yarn jest --init
   - yarn add ts-jest -D
+
+- Imports da aplicação
+  - yarn add tsconfig-paths -D
