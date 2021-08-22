@@ -1,7 +1,7 @@
 import { inject, injectable } from "tsyringe";
 
-import { AppError } from "@errors/AppError";
 import { ISpecificationsRepository } from "@modules/cars/repositories/ISpecificationsRepository";
+import { AppError } from "@shared/errors/AppError";
 
 interface IRequest {
   name: string;
@@ -13,7 +13,7 @@ class CreateSpecificationUseCase {
   constructor(
     @inject("SpecificationsRepository")
     private specificationsRepository: ISpecificationsRepository
-  ) { }
+  ) {}
   // o private nos permite ter acesso ao this. em toda class
 
   async execute({ name, description }: IRequest): Promise<void> {
