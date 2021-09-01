@@ -11,6 +11,8 @@ defmodule Exlivery.Orders.Agent do
     uuid = UUID.uuid4()
 
     Agent.update(__MODULE__, &update_state(&1, order, uuid))
+
+    {:ok, uuid}
   end
 
   def get(uuid), do: Agent.get(__MODULE__, &get_order(&1, uuid))
