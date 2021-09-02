@@ -18,10 +18,10 @@ defmodule Exlivery.Orders.Report do
 
   defp order_string(%Order{user_cpf: cpf, items: items, total_price: total_price}) do
     itens_string = Enum.map(items, fn item -> item_string(item) end)
-    "#{cpf},#{itens_string},#{total_price}\n"
+    "#{cpf}#{itens_string},#{total_price}\n"
   end
 
   defp item_string(%Item{category: category, quantity: quantity, unity_price: unity_price}) do
-    "#{category},#{quantity},#{unity_price}"
+    ",#{category},#{quantity},#{unity_price}"
   end
 end
