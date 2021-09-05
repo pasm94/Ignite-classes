@@ -26,7 +26,7 @@ defmodule Rockelivery.User do
     %__MODULE__{}
     |> cast(params, @required_params)
     |> validate_required(@required_params)
-    |> validate_length(:password_hash, min: 6)
+    |> validate_length(:password, min: 6)
     |> validate_length(:cep, is: 8)
     |> validate_length(:cpf, is: 11)
     |> validate_number(:age, greater_than_or_equal_to: 18)
@@ -36,7 +36,6 @@ defmodule Rockelivery.User do
     |> put_password_hash()
   end
 
-  # ${password_hash: password_criptografado}
   defp put_password_hash(%Changeset{valid?: true, changes: %{password: password}} = changeset) do
     change(changeset, Pbkdf2.add_hash(password))
   end
