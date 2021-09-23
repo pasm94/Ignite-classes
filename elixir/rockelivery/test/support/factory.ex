@@ -5,13 +5,13 @@ defmodule Rockelivery.Factory do
 
   def user_params_factory do
     %{
-      age: 18,
-      address: "Street test",
-      cep: "12345678",
-      cpf: "12345678901",
-      email: "johndoe@test.com",
-      password: "123456",
-      name: "John Doe"
+      "age" => 18,
+      "address" => "Street test",
+      "cep" => "01001000",
+      "cpf" => "12345678901",
+      "email" => "johndoe@test.com",
+      "password" => "123456",
+      "name" => "John Doe"
     }
   end
 
@@ -19,7 +19,7 @@ defmodule Rockelivery.Factory do
     %User{
       age: 18,
       address: "Street test",
-      cep: "12345678",
+      cep: "01001000",
       cpf: "12345678901",
       email: "johndoe@test.com",
       password: "123456",
