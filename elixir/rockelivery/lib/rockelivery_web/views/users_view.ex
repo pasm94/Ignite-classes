@@ -13,5 +13,6 @@ defmodule RockeliveryWeb.UsersView do
 
   def render("sign_in.json", %{token: token}), do: %{token: token}
 
-  def render("user.json", %{user: %User{} = user}), do: %{user: user}
+  def render("user.json", %{user: %User{} = user, token: token}),
+    do: %{user: user, token: token}
 end
