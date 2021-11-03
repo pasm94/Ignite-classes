@@ -23,9 +23,8 @@ defmodule RockeliveryWeb.UsersController do
     end
   end
 
-  def show(%{private: %{guardian_default_token: token}} = conn, %{"id" => id}) do
-    with {:ok, %User{} = user} <- Rockelivery.get_user_by_id(id),
-         {:ok, _old_stuff, {new_token, _new_claims}} = Guardian.refresh(token) do
+  def show(%{assigns: %{new_token: new_token}} = conn, %{"id" => id}) do
+    with {:ok, %User{} = user} <- Rockelivery.get_user_by_id(id) do
       conn
       |> put_status(:ok)
       |> render("user.json", user: user, token: new_token)

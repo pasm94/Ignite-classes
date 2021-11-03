@@ -1,6 +1,7 @@
 defmodule RockeliveryWeb.Router do
   use RockeliveryWeb, :router
 
+  alias RockeliveryWeb.Plugs.RefreshToken
   alias RockeliveryWeb.Plugs.UUIDChecker
 
   pipeline :api do
@@ -10,6 +11,7 @@ defmodule RockeliveryWeb.Router do
 
   pipeline :auth do
     plug RockeliveryWeb.Auth.Pipeline
+    plug RefreshToken
   end
 
   scope "/api", RockeliveryWeb do
